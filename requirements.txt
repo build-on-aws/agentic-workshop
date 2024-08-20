@@ -1,0 +1,10 @@
+streamlit
+requests
+botocore
+aws_requests_auth
+pillow
+boto3
+langchain
+llama-index
+langchain-community
+crewai
