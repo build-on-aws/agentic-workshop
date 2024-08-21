@@ -2,6 +2,7 @@
 notes.txt
 .vscode/
 dependencies/
+agentic_chatbot/chatbot_full_st.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

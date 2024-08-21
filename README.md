@@ -1,11 +1,22 @@
-## My Project
+# Building Agentic Workflows on AWS
 
-TODO: Fill this README out!
+This workshop is designed for builders ready to create Agentic Workflows on AWS. Agentic Workflows enable large language models (LLMs) to act autonomously, performing tasks or providing assistance on behalf of users.
 
-Be sure to:
+In this workshop, you'll learn to:
 
-* Change the title in this README
-* Edit your repository description on GitHub
+1. Leverage capabilities in Amazon Bedrock to create both chatbot and non-chatbot workflows
+2. Incorporate features such as code interpreter, guardrails, knowledge bases and more!
+3. Use Amazon Q Developer to assist in coding and debugging
+
+![Gen AI Stack](gen_ai_stack.png)
+
+### Workshop Modules
+
+You will complete the following 3 modules:
+
+1. **Build an Agentic Chatbot:** Create a Chatbot that can plan, use tools, and reflect to help with tasks.
+2. **Build an Agentic Workflow:** Develop agentic workflows that don't rely on a chat interface.
+3. **Leverage 3rd Party Agentic Workflows:** Use Amazon Bedrock with popular frameworks such as Langchain, LlamaIndex, and Crew.AI.
 
 ## Security
 
