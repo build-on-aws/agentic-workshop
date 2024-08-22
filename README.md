@@ -16,7 +16,7 @@ You will complete the following 3 modules:
 
 1. **Build an Agentic Chatbot:** Create a Chatbot that can plan, use tools, and reflect to help with tasks.
 2. **Build an Agentic Workflow:** Develop agentic workflows that don't rely on a chat interface.
-3. **Leverage 3rd Party Agentic Workflows:** Use Amazon Bedrock with popular frameworks such as Langchain, LlamaIndex, and Crew.AI.
+3. **Using 3rd Party Agentic Workflows:** Use Amazon Bedrock with popular frameworks such as LangChain, LlamaIndex, and crewAI.
 
 ## Security
 
