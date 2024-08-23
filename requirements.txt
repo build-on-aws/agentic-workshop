@@ -4,14 +4,4 @@ botocore
 aws_requests_auth
 pillow
 boto3
-langchain
-llama-index
-langchain-community
-crewai
-crewai[tools]
 matplotlib
-langgraph
-langchain_aws
-llama-index-llms-bedrock
-llama-index-embeddings-bedrock
-nltk
