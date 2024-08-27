@@ -1,8 +1,8 @@
+import csv
 import json
 import os
 
 import boto3
-import pandas
 
 S3_BUCKET = os.environ["S3_BUCKET"]
 S3_OBJECT = os.environ["S3_OBJECT"]
@@ -23,13 +23,13 @@ def lambda_handler(event, context):
     parameters = event.get("parameters", [])
 
     # Check the api path to determine which tool function to call
-
     s3 = boto3.client("s3")
     s3.download_file(S3_BUCKET, S3_OBJECT, "/tmp/data.csv")
-    df = pandas.read_csv("/tmp/data.csv")
 
-    # Get count of dataframe
-    count = len(df)
+    # Read CSV file and count rows
+    with open("/tmp/data.csv", "r") as file:
+        csv_reader = csv.reader(file)
+        count = sum(1 for row in csv_reader) - 1  # Subtract 1 to exclude header row
 
     response_body = {"TEXT": {"body": str(count)}}
     response_code = 200
@@ -49,5 +49,4 @@ def lambda_handler(event, context):
         "messageVersion": event["messageVersion"],
         "response": action_response,
     }
-
     return api_response
