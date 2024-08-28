@@ -3,7 +3,7 @@ import operator
 from typing import Annotated, Literal, Sequence, TypedDict
 
 from langchain_aws import ChatBedrock
-from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import tool
@@ -21,7 +21,7 @@ class AgentState(TypedDict):
 # Tool definitions
 def setup_tools():
     """Set up and return the tools used by the agents."""
-    tavily_tool = TavilySearchResults(max_results=5)
+    duck_duck_go_tool = DuckDuckGoSearchRun(max_results=5)
 
     @tool
     def python_repl(
@@ -39,7 +39,7 @@ def setup_tools():
             + "\n\nIf you have completed all tasks, respond with FINAL ANSWER."
         )
 
-    return [tavily_tool, python_repl]
+    return [duck_duck_go_tool, python_repl]
 
 
 # Agent creation

@@ -3,3 +3,4 @@ langchain-community
 langgraph
 langchain_aws
 langchain_experimental
+duckduckgo-search
