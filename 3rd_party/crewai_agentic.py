@@ -4,15 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from crewai import Agent, Crew, Task
-from langchain_aws import ChatBedrock
+from crewai import LLM, Agent, Crew, Task
 
 # Load Claude from Amazon Bedrock
-llm = ChatBedrock(
-    model_id="anthropic.claude-3-sonnet-20240229-v1:0",
-    model_kwargs=dict(temperature=0.7),
-    region_name="us-west-2",
-)
+llm = LLM(model="bedrock/anthropic.claude-3-sonnet-20240229-v1:0", temperature=0.7)
 
 
 class TravelListicleAgents:
