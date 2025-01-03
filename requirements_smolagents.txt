@@ -1,0 +1,3 @@
+smolagents
+transformers
+huggingface_hub

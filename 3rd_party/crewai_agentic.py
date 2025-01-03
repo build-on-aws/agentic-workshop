@@ -7,7 +7,7 @@ load_dotenv()
 from crewai import LLM, Agent, Crew, Task
 
 # Load Claude from Amazon Bedrock
-llm = LLM(model="bedrock/anthropic.claude-3-sonnet-20240229-v1:0", temperature=0.7)
+llm = LLM(model="bedrock/anthropic.claude-3-5-haiku-20241022-v1:0", temperature=0.7)
 
 
 class TravelListicleAgents:

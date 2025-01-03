@@ -20,7 +20,7 @@ def initialize_settings():
     """
     # Set the LLM to use Haiku model from Bedrock
     Settings.llm = Bedrock(
-        model="anthropic.claude-3-haiku-20240307-v1:0",
+        model="anthropic.claude-3-5-haiku-20241022-v1:0",
         region_name="us-west-2",
         context_size=2000,
     )
