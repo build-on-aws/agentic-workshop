@@ -1,6 +1,5 @@
 from huggingface_hub import list_models
-from smolagents import CodeAgent, LiteLLMModel, ManagedAgent
-from transformers import tool
+from smolagents import CodeAgent, LiteLLMModel, ToolCallingAgent, tool
 
 
 @tool
@@ -24,11 +23,10 @@ def multi_agent_example():
     """
     llm = LiteLLMModel(model_id="bedrock/anthropic.claude-3-5-haiku-20241022-v1:0")
 
-    model_download_agent = CodeAgent(tools=[model_download_tool], model=llm)
-
-    managed_model_download_agent = ManagedAgent(
-        agent=model_download_agent,
+    managed_model_download_agent = ToolCallingAgent(
+        tools=[model_download_tool],
         name="model_download",
+        model=llm,
         description="Returns the most downloaded model of a given task on the Hugging Face Hub.",
     )
 
