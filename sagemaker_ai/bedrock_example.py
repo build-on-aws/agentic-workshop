@@ -8,7 +8,7 @@ from botocore.exceptions import ClientError
 # Create a Bedrock Runtime client in the AWS Region of your choice.
 client = boto3.client("bedrock-runtime", region_name="us-west-2")
 
-# Set the model ID, e.g., Llama 3 70b Instruct.
+# Set the model ID
 # Should be arn:aws:sagemaker:us-east-1:ACCOUNT_ID:endpoint/jumpstart-dft-deepseek-llm-r1-disti-20250207-153847
 model_id = "REPLACE_WITH_ARN"
 
