@@ -38,7 +38,7 @@ Once your agent and action groups are setup you can replace `AGENT_ID` in agent_
 To start the Streamlit application:
 
 ```
-streamlit run chatbot_st.py
+streamlit run agent_chatbot_st.py
 ```
 
 This will launch the chatbot interface in your default web browser.
