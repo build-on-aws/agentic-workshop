@@ -11,8 +11,10 @@ load_dotenv()
 
 from crewai import LLM, Agent, Crew, Process, Task
 
+MODEL_ENDPOINT = "jumpstart-dft-deepseek-llm-r1-disti-20250306-141311"
+
 deepseek_llama = LLM(
-    model="sagemaker/jumpstart-dft-deepseek-llm-r1-disti-20250207-153847",
+    model=f"sagemaker/{MODEL_ENDPOINT}",
     temperature=0.7,
     max_tokens=4096,
 )
