@@ -25,7 +25,7 @@ def setup_tools():
 
     @tool
     def python_repl(
-        code: Annotated[str, "The python code to execute to generate your chart."]
+        code: Annotated[str, "The python code to execute to generate your chart."],
     ):
         """Execute Python code and return the result."""
         repl = PythonREPL()
@@ -72,7 +72,7 @@ def agent_node(state, agent, name):
     """Process the state through an agent and return the updated state."""
     result = agent.invoke(state)
     if not isinstance(result, ToolMessage):
-        result = AIMessage(**result.dict(exclude={"type", "name"}), name=name)
+        result = AIMessage(**result.model_dump(exclude={"type", "name"}), name=name)
     return {
         "messages": [result],
         "sender": name,
