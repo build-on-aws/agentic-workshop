@@ -140,7 +140,7 @@ def router(state) -> Literal["call_tool", "__end__", "continue"]:
 def main():
     # Set up the LLM
     llm = ChatBedrock(
-        model_id="us.amazon.nova-pro-v1:0",
+        model_id="us.anthropic.claude-3-5-haiku-20241022-v1:0",
         model_kwargs=dict(temperature=0),
         region_name="us-west-2",
     )
