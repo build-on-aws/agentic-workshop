@@ -9,3 +9,4 @@ yfinance
 fpdf
 strands-agents 
 strands-agents-tools
+uv
