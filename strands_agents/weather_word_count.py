@@ -41,5 +41,5 @@ agent = Agent(
     model=bedrock_model,
 )
 response = agent(
-    "What's the weather like in Seattle? Also how many words are in the response?"
+    "What's the weather like in Washington D.C? Also how many words are in the response?"
 )
