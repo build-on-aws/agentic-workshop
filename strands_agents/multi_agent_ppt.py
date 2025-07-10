@@ -25,7 +25,7 @@ aws_diag_client = MCPClient(
 cost_analysis_client = MCPClient(
     lambda: stdio_client(
         StdioServerParameters(
-            command="uvx", args=["awslabs.cost-analysis-mcp-server@latest"]
+            command="uvx", args=["awslabs.aws-pricing-mcp-server@latest"]
         )
     )
 )
