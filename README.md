@@ -6,7 +6,7 @@ In this workshop, you'll learn to:
 
 1. Leverage capabilities in Amazon Bedrock to create both chatbot and non-chatbot workflows
 2. Incorporate features such as code interpreter, guardrails, knowledge bases and more!
-3. Use Amazon Q Developer to assist in coding and debugging
+3. Use [Kiro](https://kiro.dev/) to assist in coding and debugging
 
 ![Gen AI Stack](gen_ai_stack.png)
 
